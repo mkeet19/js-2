@@ -69,22 +69,24 @@ var circle = {
 console.log(circle);
 //10. Create an array `shapes` that represents a list of shapes. The array should contain the rectangle and the circle objects defined above.
 //console.log the variable. Be sure to inspect it in the developer console!
-var shapes =[rect,circle];
+var shapes = [rect, circle];
 
 console.log(shapes);
-
 
 //11. Add a new object to the `shapes` array representing a right triangle.
 //The triangle should have a `base` of 33 and a `height` of 44.
 //console.log the updated shapes array
- shapes.push( triangle){
-  base:33;
-  height:44
-}
+var triangle = {
+  base: 33,
+  height: 44
+};
+shapes.push(triangle);
+
 //12. Calculate the hypotenuse of the triangle and assign the value to a 'hypotenuse' property inside the triangle object
 //console.log the `shapes` array again.
- var hypotenuse =Math.sqrt(Math.pow(shapes[2].base, 2)
- +Math.pow(shapes[2].height,2));
- shapes[2].hypotenuse = hypotenuse;
+var hypotenuse = Math.sqrt(
+  Math.pow(shapes[2].base, 2) + Math.pow(shapes[2].height, 2)
+);
+shapes[2].hypotenuse = hypotenuse;
 // hypotenuse = the square root of (a^2 + b^2)
 // use the Math.sqrt() function and the .pow() function
